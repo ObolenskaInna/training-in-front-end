@@ -1,0 +1,65 @@
+<!--
+
+    Created for practice the Pluralsight Course 'Front-End Web Development Quick Start'
+
+-->
+
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title> Github Hub </title>
+        <!-- favicon here --> 
+        <!-- [if lt IE 9] >
+        <sript src="//html5.googlecode.com/trunk/html5.js"> </script>
+        <![endif]
+        -->
+        <link rel="stylesheet" href="css/site.css"/>
+        
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            <div><img src="img/image.jpg" class="bordered-image"/></div>
+            <div> This site will be to search GitHub for interesting projects. </div>
+          
+            </header> 
+            <section id="main"> 
+                <p> In this <i> sample site</i> lorem ipsum lorem ipsum dolor sti amet <a href="http://www.githup.com">Github</a> Lorem <em>ipsum </em> lorem <strong>ipsum</strong> lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum <span>lorem ipsum lorem </span> ipsumlorem ipsumlorem ipsum <b>Lorem ipsum</b> ..... </p>
+                <form action="/my-action-page" method="POST" class="bordered-image simple-form">
+                    <!-- text after '/' link to the resource on the server which will handle request -->
+                    <label>Search Phrase:</label>
+                    <input type="text" name="searchPhrase" id="searchPhrase"/> <br/>
+                    <input type="checkbox" name="useStars" id="useStars" checked="true"/> 
+                    <label for="useStars">Use Stars?</label><br/>
+                    <label>Language:</label>
+                    <select name="langChoices" id="langChoices">
+                        <option>All</option>
+                        <option>JavaScript</option>
+                        <option>Ruby</option>
+                        <option>Java</option>
+                        <option selected>C#</option>
+                    </select>
+                </br>
+                    <input type="submit" value="search"/>  
+
+                </form>
+                <div id="results" class="bordered-image">
+                    <button id="toggleButton">Hide</button>
+                    <div id="resultList">This is were results will go.</div>
+                </div>
+            </section>
+            <footer>
+                &copy; 2019 Obolenska inc. 
+            </footer>
+         </div>
+         <script type="text/JavaScript" src="js/jquery-3.3.1.min.js"></script>
+         <script type="text/JavaScript" src="js/index.js"></script>
+    </body>
+</html> 
